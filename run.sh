@@ -6,10 +6,10 @@ cd self
 
 ruby ../gen.rb
 ruby ../README.md.gen.rb
-cp ../ss.png .
+cp -r ../imgs/ .
 
 git init
-git add green-square-quine.rb README.md ss.png
+git add green-square-quine.rb README.md imgs/
 TZ= ruby green-square-quine.rb
 ruby ../test.rb > out
 
